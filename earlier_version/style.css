@@ -1,0 +1,24 @@
+#avatar {
+  border: 1px solid rgb(56, 137, 232);
+  border-radius: 5px;
+  background-color: rgb(56, 137, 232);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.enemy {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75px;
+  height: 75px;
+  border: 1px solid rgb(235, 62, 32);
+  background-color: rgb(235, 62, 32);
+}
+
+.en-new {
+  background-color: rgb(237, 114, 0);
+}

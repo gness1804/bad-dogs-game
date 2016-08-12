@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--If I want to keep the page from showing up in search engine results, use the "nosearch" snippet here. -->
+    <meta name="viewport" content="width=device-width"/> <!--To enable media queries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!--Basic jQuery CDN -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" style="text/css" href="style.css"/>
+    <title>Mal Avatar</title>
+  </head>
+  <body>
+    <canvas id="canvas_mal" width="300" height="300"></canvas> <!-- Mal's avatar -->
+    <canvas id="baseline" width="1500" height="0"></canvas>
+    <div class="puck"> <!-- Puck the dog -->
+      <img src="images/puck.jpeg" alt="Puck the dog." />
+    </div>
+    <div class="bird"> <!-- The bird flying up and down -->
+      <img src="images/bird.jpg" alt="A bird." />
+    </div>
+    <canvas id="cloud" width="150" height="100"></canvas> <!-- A cloud -->
+    <script src="canvas.js"></script>
+  </body>
+</html>

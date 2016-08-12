@@ -1,0 +1,12 @@
+// the code for the curved right arm, using Bezier curves
+
+draw.beginPath();
+draw.moveTo(200, 144);
+draw.quadraticCurveTo(236, 138, 240, 168);
+draw.strokeStyle = "rgb(242, 149, 10)";
+draw.stroke(); // end of outer right arm curve
+draw.moveTo(200, 158);
+draw.quadraticCurveTo(229, 142, 228, 168);
+draw.stroke(); // end of inner left arm curve
+draw.lineTo(240, 168);
+draw.stroke(); // end of right arm, but need to figure out how to fill it in
