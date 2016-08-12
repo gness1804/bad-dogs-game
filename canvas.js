@@ -122,6 +122,55 @@ draw.fill(); // end of bottom left paw
 draw.beginPath();
 draw.arc(248, 290, 10, 0, 2*Math.PI);
 draw.fill(); // end of bottom right paw
+function hairball() {
+  var canvas = document.getElementById("canvas_mal");
+  var draw = canvas.getContext("2d");
+  draw.beginPath();
+  draw.arc(259, 122, 15, 0, 2*Math.PI);
+  draw.strokeStyle = "rgb(201, 138, 14)";
+  draw.fillStyle = "rgb(201, 138, 14)";
+  draw.fill();
+  draw.beginPath();
+  draw.moveTo(264, 110);
+  draw.lineTo(278, 89);
+  draw.strokeStyle = "black";
+  draw.stroke();
+  draw.closePath();
+  draw.beginPath();
+  draw.moveTo(275, 120);
+  draw.lineTo(300, 120);
+  draw.stroke();
+  draw.closePath();
+  draw.beginPath();
+  draw.moveTo(268, 136);
+  draw.lineTo(278, 152);
+  draw.stroke();
+  draw.closePath();
+  draw.beginPath();
+  draw.moveTo(250, 134);
+  draw.lineTo(237, 148);
+  draw.stroke();
+  draw.closePath();
+  draw.beginPath();
+  draw.moveTo(245, 120);
+  draw.lineTo((245 - 25), 120);
+  draw.stroke();
+  draw.closePath();
+  draw.beginPath();
+  draw.moveTo(249, 114);
+  draw.lineTo(237, 89);
+  draw.stroke();
+  draw.closePath();
+}; // function to create hairball
+
+$(document).ready(function () {
+  $(document).on("keyup keydown", function(key) {
+    if (key.which === 16) { // shift key
+      hairball();
+    }
+    });
+}); //end of jQuery body
+
 
 var cloud = document.getElementById("cloud");
 var draw2 = cloud.getContext("2d");
