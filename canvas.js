@@ -110,6 +110,18 @@ draw.lineTo(254, 293);
 draw.lineTo((254 - 13), 293);
 draw.lineTo(200, 260);
 draw.fill(); // end of right leg
+draw.beginPath();
+draw.arc(53, 107, 10, 0, 2*Math.PI);
+draw.fill(); // end of top left paw
+draw.beginPath();
+draw.arc(248, 110, 10, 0, 2*Math.PI);
+draw.fill(); // end of top right paw
+draw.beginPath();
+draw.arc(47, 290, 10, 0, 2*Math.PI);
+draw.fill(); // end of bottom left paw
+draw.beginPath();
+draw.arc(248, 290, 10, 0, 2*Math.PI);
+draw.fill(); // end of bottom right paw
 
 var cloud = document.getElementById("cloud");
 var draw2 = cloud.getContext("2d");
