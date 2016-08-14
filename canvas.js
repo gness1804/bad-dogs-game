@@ -122,6 +122,7 @@ draw.fill(); // end of bottom left paw
 draw.beginPath();
 draw.arc(248, 290, 10, 0, 2*Math.PI);
 draw.fill(); // end of bottom right paw
+
 function hairball() {
   var canvas = document.getElementById("canvas_mal");
   var draw = canvas.getContext("2d");
@@ -169,7 +170,7 @@ $(document).ready(function () {
       hairball();
     }
     });
-}); //end of jQuery body
+}); // creates the hairball when user presses shift
 
 
 var cloud = document.getElementById("cloud");
